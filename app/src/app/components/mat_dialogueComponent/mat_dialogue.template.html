@@ -1,0 +1,29 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div style="text-align: center;">
+    Add Incident</div>
+  <form [formGroup]="incidentform">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Enter Subject" [required]="false" formControlName="subject">
+        <mat-error align="start" *ngIf="incidentform.controls.subject.errors?.required">Incident Subject is Required</mat-error>
+        <mat-error align="start" *ngIf="incidentform.controls.subject.errors?.pattern">Only Alphabets</mat-error>
+      </mat-form-field>
+      <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Enter Description" [required]="false" formControlName="description">
+        <mat-error align="start" *ngIf="incidentform.controls.description.errors?.required">Description is Required</mat-error>
+        <mat-error align="start" *ngIf="incidentform.controls.description.errors?.pattern">only Number and Alphabets</mat-error>
+      </mat-form-field>
+      <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Enter Priority" [required]="false" formControlName="priority">
+        <mat-error align="start" *ngIf="incidentform.controls.priority.errors?.required">Priority is Required</mat-error>
+        <mat-error align="start" *ngIf="incidentform.controls.priority.errors?.pattern">Only Numbers are allowed</mat-error>
+      </mat-form-field>
+      <mat-form-field [appearance]="&apos;outline&apos;">
+        <input matInput placeholder="Date Picker" [matDatepicker]="picker" [min]="minDate" [required]="false" [disabled]="false">
+        <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+        <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+      </mat-form-field><button mat-raised-button [mat-dialog-close]="data" color="primary" (click)="submit()">Submit</button>
+    </div>
+  </form>
+</div>

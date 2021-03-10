@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "path": "header_nav_bar",
+            "component": "header_nav_barComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "header_nav_bar",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

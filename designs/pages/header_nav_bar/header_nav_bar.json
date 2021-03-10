@@ -1,0 +1,14 @@
+{
+    "appPageId": "b8ad95e8-8d47-3071-b54c-82a48f4ba90a",
+    "appPageName": "header_nav_bar",
+    "componentName": "header_nav_barComponent",
+    "selectorName": "bh-header_nav_bar",
+    "htmlFileName": "header_nav_bar.template.html",
+    "tsFileName": "header_nav_bar.component.ts",
+    "createDate": "2021-03-10T11:18:41.195Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

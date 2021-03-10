@@ -1,0 +1,14 @@
+{
+    "appPageId": "769874df-aef9-306e-0bde-59f6c6a9b66f",
+    "appPageName": "mat_dialogue",
+    "componentName": "mat_dialogueComponent",
+    "selectorName": "bh-mat_dialogue",
+    "htmlFileName": "mat_dialogue.template.html",
+    "tsFileName": "mat_dialogue.component.ts",
+    "createDate": "2021-03-10T11:21:04.605Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}
