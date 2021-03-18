@@ -1083,7 +1083,50 @@
                                 "_type": "dav",
                                 "_attrDef": "p"
                             }
-                        ]
+                        ],
+                        "2d9e5f14-6db3-92cb-b5e1-eb40212aafa5": {
+                            "paletteKey": "NG-icon",
+                            "parentEditorKey": "44f87e12-b510-5959-1986-1d8f6e37c77d",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "dav",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "IconName",
+                                    "_value": "edit",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "[inline]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "color",
+                                    "_value": "primary",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "edit(table)",
+                                    "_type": "kv",
+                                    "_attrDef": "c"
+                                }
+                            ]
+                        }
                     },
                     "e0c67270-68c6-5a4b-16ea-c8cce04fd4f8": {
                         "paletteKey": "ng-droppable-table-column",
@@ -1126,7 +1169,50 @@
                                 "_type": "dav",
                                 "_attrDef": "p"
                             }
-                        ]
+                        ],
+                        "10553f89-9c79-0547-d7a1-6c52944d33bb": {
+                            "paletteKey": "NG-icon",
+                            "parentEditorKey": "e0c67270-68c6-5a4b-16ea-c8cce04fd4f8",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "dav",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "IconName",
+                                    "_value": "delete",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "[inline]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "color",
+                                    "_value": "primary",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "deleteincident(table)",
+                                    "_type": "kv",
+                                    "_attrDef": "c"
+                                }
+                            ]
+                        }
                     }
                 }
             }
