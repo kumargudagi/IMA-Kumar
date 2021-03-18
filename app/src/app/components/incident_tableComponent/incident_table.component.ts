@@ -62,7 +62,7 @@ export class incident_tableComponent extends NBaseComponent implements OnInit {
         });
 
         dialogref.afterClosed().subscribe(result => {
-            console.log('The dialog was closed', result);
+            console.log('The dialog was closed', result); 
             this.getincident()
             this.getincident()
         });
