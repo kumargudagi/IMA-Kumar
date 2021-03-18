@@ -8,7 +8,7 @@ import { updatetableComponent } from '../updatetableComponent/updatetable.compon
 import { mat_dialogueComponent } from '../mat_dialogueComponent/mat_dialogue.component'
 import { apiservices } from 'app/sd-services/apiservices';
 import { DatePipe } from '@angular/common';
-import {MatSort} from '@angular/material/sort';
+import {MatSort} from '@angular/material/sort'; 
 
 
 /*
