@@ -31,7 +31,7 @@ export class mat_dialogueComponent extends NBaseComponent implements OnInit {
     incidentdata
     constructor(public fb: FormBuilder, public service: apiservices, public dialogRef: MatDialogRef<mat_dialogueComponent>, @Optional() @Inject(MAT_DIALOG_DATA) public data1: any) {
         super();
-        console.log("-----",data1); 
+        console.log("----",data1); 
         this.incidentdata= data1
         if(data1 != null){
             this.isfrom_update=true
