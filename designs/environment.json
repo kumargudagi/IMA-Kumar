@@ -14,7 +14,8 @@
             "SSD_DEFAULT_PORT": "server",
             "webAppMountpoint": "both",
             "CLOCK_TOLERANCE": "server",
-            "NGFORAGE_MOBILE_DRIVER": "client"
+            "NGFORAGE_MOBILE_DRIVER": "client",
+            "mongourl": "server"
         }
     },
     "dev": {
@@ -27,12 +28,13 @@
             "namespace": "com.neutrinos-training.ima-kumar",
             "googleMapKey": "AIzaSyCSTnVwijjv0CFRA4MEeS-H6PAQc87LEoU",
             "useDefaultExceptionUI": true,
-            "isIDSEnabled": "false",
+            "isIDSEnabled": "true",
             "SSD_BASE_PATH": "/api",
             "SSD_DEFAULT_PORT": "8081",
             "webAppMountpoint": "web",
             "CLOCK_TOLERANCE": "5",
-            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB"
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "mongourl": "mongodb://localhost:27017/incidents"
         }
     },
     "prod": {
@@ -50,7 +52,8 @@
             "SSD_DEFAULT_PORT": "8081",
             "webAppMountpoint": "web",
             "CLOCK_TOLERANCE": "5",
-            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB"
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "mongourl": "mongodb://localhost:27017/incidents"
         }
     }
 }

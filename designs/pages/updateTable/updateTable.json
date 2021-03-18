@@ -1,0 +1,14 @@
+{
+    "appPageId": "4d5203ae-8adb-2b3a-934e-4e46b11b3fa8",
+    "appPageName": "updateTable",
+    "componentName": "updatetableComponent",
+    "selectorName": "bh-updatetable",
+    "htmlFileName": "updatetable.template.html",
+    "tsFileName": "updatetable.component.ts",
+    "createDate": "2021-03-15T06:37:41.201Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

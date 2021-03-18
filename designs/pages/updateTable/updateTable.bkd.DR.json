@@ -1,5 +1,5 @@
 {
-    "48e630da-2013-523a-cb86-af7effb2f693": {
+    "358d0404-1dba-982c-4263-25cda5122ab0": {
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
@@ -64,15 +64,14 @@
                 "_attrDef": "p"
             }
         ],
-        "8a64b6d5-f805-62c7-2cff-54923aadd579": {
+        "8d3cfab6-8784-8f54-c925-615bd4f2d9e7": {
             "paletteKey": "Html5",
-            "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
+            "parentEditorKey": "358d0404-1dba-982c-4263-25cda5122ab0",
             "isAdvancedComponent": true,
-            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "text-align: center; font-size:20px; ",
+                    "_value": "text-align: center;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -249,19 +248,12 @@
                     "_type": "kv",
                     "_attrDef": "p",
                     "_visibility": false
-                },
-                {
-                    "_key": "*ngIf",
-                    "_value": "!isfrom_update",
-                    "_type": "kv",
-                    "_attrDef": "c"
                 }
             ],
-            "bd7fa7e2-ebc5-b765-a1d1-248cbdb613ed": {
+            "ea7f45a8-e768-41ba-ada5-0a7f93bd84d5": {
                 "paletteKey": "html-editor",
-                "parentEditorKey": "8a64b6d5-f805-62c7-2cff-54923aadd579",
+                "parentEditorKey": "8d3cfab6-8784-8f54-c925-615bd4f2d9e7",
                 "isAdvancedChildComponent": true,
-                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -277,237 +269,16 @@
                     },
                     {
                         "_key": "html",
-                        "_value": "Add Incident",
+                        "_value": "Update Incident ",
                         "_type": "a",
                         "_attrDef": "p"
                     }
                 ]
             }
         },
-        "4630eb36-eef3-975f-88ae-ccbf2dd4f63d": {
-            "paletteKey": "Html5",
-            "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
-            "isAdvancedComponent": true,
-            "isCommented": "false",
-            "designerReference": [
-                {
-                    "_key": "style",
-                    "_value": "text-align: center; font-size:20px; ",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "htmlElement",
-                    "_value": "div",
-                    "_type": "dav",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "tagType",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "name",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "sandbox",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "src",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "srcdoc",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "width",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "[autoplay]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "[loop]",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "data",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "audioSource",
-                    "_value": [],
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "videoSource",
-                    "_value": [],
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "audioDatasource",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "audioSrc",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "audioType",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "videoDatasource",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "videoSrc",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "videoType",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(audioplay)",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(videoplay)",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(audiopause)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(videopause)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(audioended)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "(videoended)",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_visibility": false
-                },
-                {
-                    "_key": "*ngIf",
-                    "_value": "isfrom_update",
-                    "_type": "kv",
-                    "_attrDef": "c"
-                }
-            ],
-            "1c785658-22ed-24ce-5500-be0372005e03": {
-                "paletteKey": "html-editor",
-                "parentEditorKey": "4630eb36-eef3-975f-88ae-ccbf2dd4f63d",
-                "isAdvancedChildComponent": true,
-                "isCommented": "false",
-                "designerReference": [
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "dav",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "html",
-                        "_value": "Update Incident",
-                        "_type": "a",
-                        "_attrDef": "p"
-                    }
-                ]
-            }
-        },
-        "93549989-5688-7146-e86a-dc3b9b2af179": {
+        "8bcc97c1-f5a4-70df-070e-f28620548d5e": {
             "paletteKey": "NG-Form",
-            "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
-            "isCommented": "false",
+            "parentEditorKey": "358d0404-1dba-982c-4263-25cda5122ab0",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -565,10 +336,9 @@
                     "_attrDef": "c"
                 }
             ],
-            "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d": {
+            "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd": {
                 "paletteKey": "FlexLayoutCol",
-                "parentEditorKey": "93549989-5688-7146-e86a-dc3b9b2af179",
-                "isCommented": "false",
+                "parentEditorKey": "8bcc97c1-f5a4-70df-070e-f28620548d5e",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -632,11 +402,10 @@
                         "_attrDef": "p"
                     }
                 ],
-                "662857a2-87df-6c32-8e67-f73716b93a52": {
+                "489b3933-2ed3-984a-7046-ddd1a3dea7f4": {
                     "paletteKey": "NG-Input",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
+                    "parentEditorKey": "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -824,11 +593,10 @@
                         }
                     ]
                 },
-                "8a8d37b1-8aa7-f6d2-a57b-08d8d759e87e": {
+                "7580f9cc-bad6-86fb-9679-42bbd7f15048": {
                     "paletteKey": "NG-Input",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
+                    "parentEditorKey": "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1016,11 +784,10 @@
                         }
                     ]
                 },
-                "877140cc-7066-69f7-c392-587d2a31cd70": {
+                "9f1a1a98-8519-bfe5-eaae-baec3aa4f30d": {
                     "paletteKey": "NG-Input",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
+                    "parentEditorKey": "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1208,11 +975,10 @@
                         }
                     ]
                 },
-                "521cadc1-ce02-cab7-cd9a-e590943f8534": {
+                "51e33a4e-14c2-ac90-91bc-cfa8be13639d": {
                     "paletteKey": "NG-DatePicker",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
+                    "parentEditorKey": "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1453,11 +1219,17 @@
                         }
                     ]
                 },
-                "b4940864-e71a-98f9-73cb-3445deeb73e4": {
-                    "paletteKey": "NG-RaisedButton",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
-                    "isCommented": "false",
+                "fab8ccf0-cf69-b3b8-d968-0809dd194238": {
+                    "paletteKey": "FlexLayoutRow",
+                    "parentEditorKey": "16fb41b3-b3a5-2f8b-dfb9-acf8094c89bd",
                     "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Row",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
                         {
                             "_key": "style",
                             "_value": "",
@@ -1471,136 +1243,183 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Submit",
+                            "_key": "fxFlex",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxLayoutGap",
+                            "_value": "60px",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "wrap",
+                            "_value": "wrap",
                             "_type": "a",
-                            "_attrDef": "p",
-                            "_useAsLabel": true
-                        },
-                        {
-                            "_key": "color",
-                            "_value": "primary",
-                            "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "submit()",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "incidentform.invalid",
-                            "_type": "kv",
-                            "_attrDef": "p",
-                            "_customAttributeFlag": true
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p",
-                            "_customAttributeFlag": true
-                        },
-                        {
-                            "_key": "type",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "routerLink",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[mat-dialog-close]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "c"
-                        },
-                        {
-                            "_key": "*ngIf",
-                            "_value": "!isfrom_update",
-                            "_type": "kv",
-                            "_attrDef": "c"
-                        }
-                    ]
-                },
-                "8f1b33e4-2970-b367-4924-246083fb9c99": {
-                    "paletteKey": "NG-RaisedButton",
-                    "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
-                    "designerReference": [
-                        {
-                            "_key": "style",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "class",
-                            "_value": "",
-                            "_type": "dav",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "buttonname",
-                            "_value": "Update",
+                            "_key": "layoutAlign",
+                            "_value": "center",
                             "_type": "a",
-                            "_attrDef": "p",
-                            "_useAsLabel": true
+                            "_attrDef": "p"
                         },
                         {
-                            "_key": "color",
-                            "_value": "primary",
+                            "_key": "pLayoutAlign",
+                            "_value": "center",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "[fxShow]",
+                            "_value": "true",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "updateIncident()",
+                            "_key": "[fxHide]",
+                            "_value": "false",
                             "_type": "kv",
                             "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "routerLink",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "*ngIf",
-                            "_value": "isfrom_update",
-                            "_type": "kv",
-                            "_attrDef": "c"
-                        },
-                        {
-                            "_key": "[mat-dialog-close]",
-                            "_value": "latestincident",
-                            "_type": "kv",
-                            "_attrDef": "c"
                         }
-                    ]
+                    ],
+                    "70d0f752-3fbf-9935-f2fd-fe2b19fe19eb": {
+                        "paletteKey": "NG-RaisedButton",
+                        "parentEditorKey": "fab8ccf0-cf69-b3b8-d968-0809dd194238",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "buttonname",
+                                "_value": "Cancel",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "accent",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disableRipple]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[mat-dialog-close]",
+                                "_value": "[mat-dialog-close]",
+                                "_type": "a",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    },
+                    "65c7a0a2-222b-9bc5-32c5-66d36ea9ee13": {
+                        "paletteKey": "NG-RaisedButton",
+                        "parentEditorKey": "fab8ccf0-cf69-b3b8-d968-0809dd194238",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "buttonname",
+                                "_value": "Update",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "primary",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "updateIncident()",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_customAttributeFlag": true
+                            },
+                            {
+                                "_key": "[disableRipple]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[mat-dialog-close]",
+                                "_value": "latestincident",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    }
                 }
             }
         }

@@ -1,4 +1,4 @@
-export default {
+{
     "db-config": {
         "sd_9VADWofZ1fADDhtS": {
             "id": "sd_9VADWofZ1fADDhtS",
@@ -8,7 +8,7 @@ export default {
             "dbOption": {
                 "name": "mongodb_0",
                 "type": "mongodb",
-                "url": process.env.mongourl,
+                "url": "__ssd__env__process.env.mongourl__ssd__env__end",
                 "options": ""
             },
             "disabledb": false,
@@ -53,7 +53,7 @@ export default {
             "oracle_synchronize": true,
             "mongodb_name": "mongodb_0",
             "mongodb_type": "mongodb",
-            "mongodb_url": process.env.mongourl,
+            "mongodb_url": "__ssd__env__process.env.mongourl__ssd__env__end",
             "mongodb_options": "",
             "mysql_name": "mongodb_0",
             "mysql_type": "mongodb",

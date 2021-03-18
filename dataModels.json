@@ -1,0 +1,34 @@
+{
+    "5408cbf5-793b-4ebd-f86a-52bb06e60776": {
+        "dataModelId": "5408cbf5-793b-4ebd-f86a-52bb06e60776",
+        "name": "incident",
+        "description": "incident",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "subject",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "priority",
+                "fieldType": 1,
+                "isArray": false,
+                "type": "number"
+            },
+            {
+                "name": "description",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "incident_date",
+                "fieldType": 3,
+                "isArray": false,
+                "type": "Date"
+            }
+        ]
+    }
+}

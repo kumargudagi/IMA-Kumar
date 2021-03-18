@@ -1,0 +1,14 @@
+{
+    "appPageId": "550cc641-e0eb-971d-b7c2-b57cb097d2eb",
+    "appPageName": "incident_table",
+    "componentName": "incident_tableComponent",
+    "selectorName": "bh-incident_table",
+    "htmlFileName": "incident_table.template.html",
+    "tsFileName": "incident_table.component.ts",
+    "createDate": "2021-03-11T09:29:15.343Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

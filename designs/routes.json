@@ -2,7 +2,20 @@
     "routes": [
         {
             "path": "header_nav_bar",
-            "component": "header_nav_barComponent"
+            "component": "header_nav_barComponent",
+            "canActivate": "NeutrinosAuthGuardService"
+        },
+        {
+            "path": "incident_table",
+            "component": "incident_tableComponent"
+        },
+        {
+            "path": "updatetable",
+            "component": "updatetableComponent"
+        },
+        {
+            "path": "shoppingcart",
+            "component": "shoppingcartComponent"
         },
         {
             "path": "''",
