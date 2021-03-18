@@ -1,8 +1,6 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div *ngIf="!isfrom_update" style="text-align: center; font-size:20px; ">
-    Add Incident</div>
-  <div *ngIf="isfrom_update" style="text-align: center; font-size:20px; ">
-    Update Incident</div>
+  <div style="text-align: center;">
+    Update Incident </div>
   <form [formGroup]="incidentform">
     <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
       <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
@@ -25,7 +23,8 @@
         <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
         <mat-datepicker #picker [disabled]="false"></mat-datepicker>
 
-      </mat-form-field><button mat-raised-button *ngIf="!isfrom_update" color="primary" (click)="submit()" [disabled]="incidentform.invalid">Submit</button><button mat-raised-button *ngIf="isfrom_update" [mat-dialog-close]="latestincident" color="primary" (click)="updateIncident()">Update</button>
+      </mat-form-field>
+      <div fxLayout="row wrap" fxLayoutGap="60px" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button [mat-dialog-close] color="accent">Cancel</button><button mat-raised-button [mat-dialog-close]="latestincident" color="primary" (click)="updateIncident()">Update</button></div>
     </div>
   </form>
 </div>

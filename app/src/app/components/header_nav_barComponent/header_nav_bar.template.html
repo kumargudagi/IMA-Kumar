@@ -6,11 +6,13 @@
           <div style=" font-size: 20px;     color: black;">
             Incident Details</div>
         </div>
-        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <mat-icon style="font-size: 30px; color: darkblue;" (click)="openDialog()">add_circle</mat-icon>
-          <mat-icon style="font-size: 30px; color: darkblue;">home</mat-icon>
-          <mat-icon style="font-size: 30px; color: darkblue;">logout</mat-icon>
-        </div>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-fab style="font-size: 30px;" color="primary" (click)="openDialog()">
+            <mat-icon>add_circle</mat-icon>
+          </button><button mat-fab color="primary">
+            <mat-icon>home</mat-icon>
+          </button><button mat-fab color="primary" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+          </button></div>
       </div>
     </mat-card-content>
   </mat-card>

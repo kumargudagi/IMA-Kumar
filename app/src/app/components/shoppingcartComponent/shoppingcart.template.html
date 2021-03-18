@@ -1,0 +1,185 @@
+<div fxLayout="row wrap" style="margin-left:50px" fxLayoutGap="400px" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+    <mat-tab-group mat-align-tabs="start">
+      <mat-tab label="Shopping">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div>
+              <br><br>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  First name</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  last name</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Email</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+            </div><span style="color:red">
+                <hr></span>
+            <div>
+              <br>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Company</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Address</div>
+                <mat-form-field style="width: 433px;" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Country<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                      <mat-select placeholder="Select" [required]="false">
+                        <ng-template ngFor let-option [ngForOf] let-i="index">
+                          <mat-option [value]></mat-option>
+                        </ng-template>
+                      </mat-select>
+
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  City</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Zip Code</div>
+                <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-checkbox color="primary" [required]="false"></mat-checkbox>
+              </div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  My Shopping and billing information is the same</div>
+              </div>
+            </div><span style="color:black; margin-top: 50px;">
+                <hr></span>
+            <div fxLayout="row wrap" style="    margin-top: 30px;" fxLayoutGap="10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-checkbox color="primary" [required]="false"></mat-checkbox>
+              </div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  Create password for easier account access</div>
+              </div>
+            </div><span style="color:black; margin-top: 30px;">
+                <hr></span>
+            <div fxLayout="row wrap" fxLayoutGap="300px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="     background-color: whitesmoke;     width: 150px;     color: black;" color="primary">Return to Store</button></div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="background-color: limegreen;width: 200px;">Continue</button></div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Payment"></mat-tab>
+      <mat-tab label="Confirmation"></mat-tab>
+    </mat-tab-group>
+  </div>
+  <div fxLayout="column wrap" style="height:1200px; width:235px; background-color: #313a73;" fxLayoutAlign="none stretch" [fxShow]="true" [fxHide]="false">
+    <div style="     font-size: 25px;     color: white;     text-align: center;">
+      Shopping cart</div>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card style="background-color: #313A73;">
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div style="color:blue">
+            Views Authentic </div>
+          <div style="color:blue">
+            250</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -15,6 +15,12 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-shoppingcartComponent
+import { shoppingcartComponent } from '../components/shoppingcartComponent/shoppingcart.component';
+//CORE_REFERENCE_IMPORT-updatetableComponent
+import { updatetableComponent } from '../components/updatetableComponent/updatetable.component';
+//CORE_REFERENCE_IMPORT-incident_tableComponent
+import { incident_tableComponent } from '../components/incident_tableComponent/incident_table.component';
 //CORE_REFERENCE_IMPORT-mat_dialogueComponent
 import { mat_dialogueComponent } from '../components/mat_dialogueComponent/mat_dialogue.component';
 //CORE_REFERENCE_IMPORT-header_nav_barComponent
@@ -46,6 +52,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-shoppingcartComponent
+shoppingcartComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-updatetableComponent
+updatetableComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-incident_tableComponent
+incident_tableComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-mat_dialogueComponent
 mat_dialogueComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-header_nav_barComponent
@@ -76,5 +88,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'header_nav_bar', component: header_nav_barComponent},{path: '', redirectTo: 'header_nav_bar', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'header_nav_bar', component: header_nav_barComponent, canActivate: [NeutrinosAuthGuardService]},{path: 'incident_table', component: incident_tableComponent},{path: 'updatetable', component: updatetableComponent},{path: 'shoppingcart', component: shoppingcartComponent},{path: '', redirectTo: 'header_nav_bar', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
