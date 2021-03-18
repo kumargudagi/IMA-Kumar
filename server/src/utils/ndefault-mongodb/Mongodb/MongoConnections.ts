@@ -8,7 +8,7 @@ export class MongoConnections {
     }
 
 
-    static getInstance() {
+    static getInstance(): MongoConnections {
         if (!MongoConnections.instance) {
             MongoConnections.instance = new MongoConnections();
         }

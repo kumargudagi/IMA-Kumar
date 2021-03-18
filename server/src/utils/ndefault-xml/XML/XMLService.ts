@@ -3,7 +3,7 @@ let XMLServiceInstance = null;
 export class XMLService {
     constructor() {}
 
-    static getInstance() {
+    static getInstance(): XMLService {
         if (!XMLServiceInstance) {
             XMLServiceInstance = new XMLService();
         }

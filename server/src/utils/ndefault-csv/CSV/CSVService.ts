@@ -1,11 +1,11 @@
 import * as csvParser from 'csv-parse';
 import * as csvStringify from 'csv-stringify';
 
-let CSVServiceInstance = null;
+let CSVServiceInstance: CSVService = null;
 export class CSVService {
     private constructor() {}
 
-    static getInstance() {
+    static getInstance(): CSVService {
         if (!CSVServiceInstance) {
             CSVServiceInstance = new CSVService();
         }
@@ -34,7 +34,8 @@ export class CSVService {
         columns?: any,
         max_record_size?: number,
         relax_column_count?: boolean,
-        skip_lines_with_error?: boolean
+        skip_lines_with_error?: boolean,
+        delimiter?: string
     }) {
         return new Promise((resolve, reject) => {
             csvParser(csv, options, (err, records) => {

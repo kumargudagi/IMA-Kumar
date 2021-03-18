@@ -69,6 +69,9 @@ export class mat_dialogueComponent extends NBaseComponent implements OnInit {
         // console.log("form", this.incidentform.value)
         this.data = (await this.service.addincident(this.incidentform.value)).local.apiresult;
         console.log("api result dataa", this.data)
+        if(this.data){
+            this.service.snackbar({message:" incident Saved Successfully"})
+        }
 
 
         // this.data = (await this.service.getIncList ()).local.apiresult;
@@ -80,6 +83,9 @@ export class mat_dialogueComponent extends NBaseComponent implements OnInit {
      async updateIncident(){
         this.data = (await this.service.updatencident(this.incidentform.value)).local.apiresult;
         console.log("update api result dataa", this.data)
+        if(this.data){
+            this.service.snackbar({message:" incident Updated Successfully"})
+        }
 
 
          this.latestincident='closed';

@@ -3,12 +3,13 @@ import { NDataModel } from './nDataModel.class';
 import { localesService } from './localesService';
 export class NBaseComponent {
     dm: NDataModel;
-    locales :any = {};
+    localesService: any;
     constructor() {
         this.dm = new NDataModel();
-        localesService.getLocalesInstance().$localeSub.subscribe(locales => {
-            this.locales = locales;
-        });
-        localesService.getLangInstance();
+        this.localesService = localesService.getLocalesInstance();
+    }
+
+    get locales() {
+        return this.localesService.locale || {};
     }
 }

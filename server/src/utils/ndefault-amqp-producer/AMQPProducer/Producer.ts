@@ -19,7 +19,7 @@ export class Producer {
     queueChannelMap: { [key: string]: Channel } = {};
     constructor() {}
 
-    static getInstance(mqOptions: Options.Connect) {
+    static getInstance(mqOptions: Options.Connect): Producer {
         if (!ProducerInstance) {
             if (!mqOptions.hostname || !mqOptions.port) {
                 throw new Error("Invalid MQ config");

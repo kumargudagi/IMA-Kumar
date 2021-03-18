@@ -1,12 +1,12 @@
 import * as iconv from 'iconv-lite';
 import * as fs from 'fs';
 
-let FileInServiceInstance = null;
+let FileInServiceInstance: FileInService = null;
 
 export class FileInService {
     private constructor() {}
 
-    static getInstance() {
+    static getInstance(): FileInService {
         if (!FileInServiceInstance) {
             FileInServiceInstance = new FileInService();
         }

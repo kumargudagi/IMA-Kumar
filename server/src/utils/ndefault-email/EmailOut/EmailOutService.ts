@@ -3,14 +3,14 @@ import * as nodemailer from 'nodemailer';
 import * as MailParser from 'mailparser';
 // import * as Imap from 'imap';
 
-let EmailServiceInstance = null;
+let EmailServiceInstance: EmailOutService = null;
 let __simpleParser: any;
 export class EmailOutService {
     // private __simpleParser: any;
 
     constructor() {}
 
-    static getInstance() {
+    static getInstance(): EmailOutService {
         if (!EmailServiceInstance) {
             
             EmailServiceInstance = new EmailOutService();

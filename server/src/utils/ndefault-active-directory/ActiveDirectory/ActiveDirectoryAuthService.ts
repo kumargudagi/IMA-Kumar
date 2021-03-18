@@ -1,6 +1,6 @@
 'use strict'
 import * as ActiveDirectory from 'activedirectory';
-import * as HttpStatus from 'http-status-codes';
+import { StatusCodes as HttpStatus } from 'http-status-codes';
 
 export class ActiveDirectoryAuthService {
     constructor() {}

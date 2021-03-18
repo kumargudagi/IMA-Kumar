@@ -4,7 +4,7 @@ let YMLServiceInstance = null;
 export class YMLService {
     private constructor() {}
 
-    static getInstance() {
+    static getInstance(): YMLService {
         if (!YMLServiceInstance) {
             YMLServiceInstance = new YMLService();
         }

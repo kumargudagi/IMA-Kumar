@@ -68,7 +68,6 @@
             "paletteKey": "Html5",
             "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
             "isAdvancedComponent": true,
-            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "style",
@@ -261,7 +260,6 @@
                 "paletteKey": "html-editor",
                 "parentEditorKey": "8a64b6d5-f805-62c7-2cff-54923aadd579",
                 "isAdvancedChildComponent": true,
-                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -288,7 +286,6 @@
             "paletteKey": "Html5",
             "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
             "isAdvancedComponent": true,
-            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "style",
@@ -481,7 +478,6 @@
                 "paletteKey": "html-editor",
                 "parentEditorKey": "4630eb36-eef3-975f-88ae-ccbf2dd4f63d",
                 "isAdvancedChildComponent": true,
-                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -507,7 +503,6 @@
         "93549989-5688-7146-e86a-dc3b9b2af179": {
             "paletteKey": "NG-Form",
             "parentEditorKey": "48e630da-2013-523a-cb86-af7effb2f693",
-            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -568,7 +563,6 @@
             "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d": {
                 "paletteKey": "FlexLayoutCol",
                 "parentEditorKey": "93549989-5688-7146-e86a-dc3b9b2af179",
-                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -636,7 +630,6 @@
                     "paletteKey": "NG-Input",
                     "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -828,7 +821,6 @@
                     "paletteKey": "NG-Input",
                     "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1020,7 +1012,6 @@
                     "paletteKey": "NG-Input",
                     "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1212,7 +1203,6 @@
                     "paletteKey": "NG-DatePicker",
                     "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -1456,7 +1446,6 @@
                 "b4940864-e71a-98f9-73cb-3445deeb73e4": {
                     "paletteKey": "NG-RaisedButton",
                     "parentEditorKey": "9dbb94e6-4c11-2b3b-6693-7c63be4ff98d",
-                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",

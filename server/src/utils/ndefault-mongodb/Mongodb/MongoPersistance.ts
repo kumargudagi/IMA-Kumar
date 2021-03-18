@@ -1,7 +1,7 @@
 
 import * as mongodb from 'mongodb';
 import * as fs from 'fs';
-import * as EJSON from 'mongodb-extended-json';
+import * as BSON from 'bson';
 import { MongoConnections } from './MongoConnections';
 
 
@@ -12,7 +12,7 @@ export class MongoPersistance {
 
     }
 
-    static getInstance() {
+    static getInstance(): MongoPersistance {
         if (!MongoPersistance.instance) {
             MongoPersistance.instance = new MongoPersistance();
         }
@@ -26,10 +26,9 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
-                update = EJSON.deserialize(update);
+                filter = this.deserialize(filter);
+                update = this.deserialize(update);
                 return await dsRef.db().collection(entity).updateOne(filter, update, options);
-
             } catch (error) {
                 throw new Error(error);
             }
@@ -43,8 +42,8 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
-                update = EJSON.deserialize(update);
+                filter = this.deserialize(filter);
+                update = this.deserialize(update);
                 return await dsRef.db().collection(entity).updateMany(filter, update, options);
             } catch (error) {
                 throw new Error(error);
@@ -60,7 +59,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                query = EJSON.deserialize(query);
+                query = this.deserialize(query);
                 return await dsRef.db().collection(entity).findOne(query, options)
             } catch (error) {
                 throw new Error(error);
@@ -76,7 +75,7 @@ export class MongoPersistance {
             }
             else {
                 try {
-                    query = EJSON.deserialize(query);
+                    query = this.deserialize(query);
                     var cursor = dsRef.db().collection(entity).find(query, options);
                     // cursor.skip(pageSize * (pageNumber - 1)).limit(pageSize).sort(sort).project(projection);
                     return resolve(cursor.toArray());
@@ -95,8 +94,8 @@ export class MongoPersistance {
         }
         else {
             try {
-                query = EJSON.deserialize(query);
-                update = EJSON.deserialize(update);
+                query = this.deserialize(query);
+                update = this.deserialize(update);
                 return await dsRef.db().collection(entity).findOneAndUpdate(query, update, options);
             } catch (error) {
                 throw new Error(error);
@@ -113,7 +112,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                let filter = EJSON.deserialize(query);
+                let filter = this.deserialize(query);
                 return { "count": await dsRef.db().collection(entity).countDocuments(filter, options) };
             } catch (error) {
                 throw new Error(error);
@@ -130,7 +129,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                doc = EJSON.deserialize(doc);
+                doc = this.deserialize(doc);
                 return await dsRef.db().collection(entity).insertOne(doc, options);
             } catch (error) {
                 throw new Error(error);
@@ -146,7 +145,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                doc = EJSON.deserialize(doc);
+                doc = this.deserialize(doc);
                 return await dsRef.db().collection(entity).insertMany(doc, options);
             } catch (error) {
                 throw new Error(error);
@@ -162,7 +161,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
+                filter = this.deserialize(filter);
                 return await dsRef.db().collection(entity).deleteOne(filter, options);
             } catch (error) {
                 throw new Error(error);
@@ -177,7 +176,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
+                filter = this.deserialize(filter);
                 return await dsRef.db().collection(entity).deleteMany(filter, options);
             } catch (error) {
                 throw new Error(error);
@@ -326,7 +325,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                doc = EJSON.deserialize(doc);
+                doc = this.deserialize(doc);
                 return await dsRef.db().collection(entity).bulkWrite(doc, options);
             } catch (error) {
                 throw new Error(error);
@@ -401,7 +400,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
+                filter = this.deserialize(filter);
                 return await dsRef.db().collection(entity).findOneAndReplace(filter, replacement, options);
             } catch (error) {
                 throw new Error(error);
@@ -416,7 +415,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                query = EJSON.deserialize(query);
+                query = this.deserialize(query);
                 return await dsRef.db().collection(entity).findOneAndDelete(query, options);
             } catch (error) {
                 throw new Error(error);
@@ -572,7 +571,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
+                filter = this.deserialize(filter);
                 return await dsRef.db().collection(entity).removeMany(filter, options);
             } catch (error) {
                 throw new Error(error);
@@ -587,7 +586,7 @@ export class MongoPersistance {
         }
         else {
             try {
-                filter = EJSON.deserialize(filter);
+                filter = this.deserialize(filter);
                 return await dsRef.db().collection(entity).removeOne(filter, options);
             } catch (error) {
                 throw new Error(error);
@@ -665,4 +664,12 @@ export class MongoPersistance {
             }
         }
     }
+
+	private deserialize(item: Buffer | ArrayBuffer | ArrayBufferView) {
+		if(Buffer.isBuffer(item) || item instanceof ArrayBuffer || ArrayBuffer.isView(item)) {
+			return BSON.deserialize(item);
+		}
+		return item;
+		// return BSON.deserialize(BSON.serialize(item));
+	}
 }

@@ -8,7 +8,7 @@ import {
   NavigationEnd,
   NavigationStart,
   Resolve,
-  ActivatedRouteSnapshot
+  ActivatedRouteSnapshot,
 } from '@angular/router'; //_splitter_
 import { MatSnackBar } from '@angular/material/snack-bar'; //_splitter_
 import { SDBaseService } from '../../app/n-services/SDBaseService'; //_splitter_
@@ -38,11 +38,11 @@ export class apiservices {
     try {
       var bh = {
         input: {
-          incident: incident
+          incident: incident,
         },
         local: {
-          apiresult: undefined
-        }
+          apiresult: undefined,
+        },
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.addIncident(bh);
@@ -52,8 +52,8 @@ export class apiservices {
         {
           input: {},
           local: {
-            apiresult: bh.local.apiresult
-          }
+            apiresult: bh.local.apiresult,
+          },
         }
       );
     } catch (e) {
@@ -66,8 +66,8 @@ export class apiservices {
       var bh = {
         input: {},
         local: {
-          apiresult: undefined
-        }
+          apiresult: undefined,
+        },
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.getIncident(bh);
@@ -77,8 +77,8 @@ export class apiservices {
         {
           input: {},
           local: {
-            apiresult: bh.local.apiresult
-          }
+            apiresult: bh.local.apiresult,
+          },
         }
       );
     } catch (e) {
@@ -91,9 +91,9 @@ export class apiservices {
       var bh = {
         input: {
           setkey: setkey,
-          setvalue: setvalue
+          setvalue: setvalue,
         },
-        local: {}
+        local: {},
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.sd_fSRDERp7vogKWum6(bh);
@@ -102,7 +102,7 @@ export class apiservices {
         // formatting output variables
         {
           input: {},
-          local: {}
+          local: {},
         }
       );
     } catch (e) {
@@ -114,11 +114,11 @@ export class apiservices {
     try {
       var bh = {
         input: {
-          getkey: getkey
+          getkey: getkey,
         },
         local: {
-          getvalues: undefined
-        }
+          getvalues: undefined,
+        },
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.sd_ShHbxqVqNKNp3sxl(bh);
@@ -128,8 +128,8 @@ export class apiservices {
         {
           input: {},
           local: {
-            getvalues: bh.local.getvalues
-          }
+            getvalues: bh.local.getvalues,
+          },
         }
       );
     } catch (e) {
@@ -141,11 +141,11 @@ export class apiservices {
     try {
       var bh = {
         input: {
-          incident: incident
+          incident: incident,
         },
         local: {
-          apiresult: undefined
-        }
+          apiresult: undefined,
+        },
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.updateIncident(bh);
@@ -155,8 +155,8 @@ export class apiservices {
         {
           input: {},
           local: {
-            apiresult: bh.local.apiresult
-          }
+            apiresult: bh.local.apiresult,
+          },
         }
       );
     } catch (e) {
@@ -168,11 +168,11 @@ export class apiservices {
     try {
       var bh = {
         input: {
-          id: id
+          id: id,
         },
         local: {
-          apiresult: undefined
-        }
+          apiresult: undefined,
+        },
       };
       bh = this.sdService.__constructDefault(bh);
       bh = await this.deleteIncident(bh);
@@ -182,12 +182,35 @@ export class apiservices {
         {
           input: {},
           local: {
-            apiresult: bh.local.apiresult
-          }
+            apiresult: bh.local.apiresult,
+          },
         }
       );
     } catch (e) {
       return await this.errorHandler(bh, e, 'sd_59jAo0qa1G7skJ5Q');
+    }
+  }
+
+  async snackbar(obj: any = undefined, ...others) {
+    try {
+      var bh = {
+        input: {
+          obj: obj,
+        },
+        local: {},
+      };
+      bh = this.sdService.__constructDefault(bh);
+      bh = await this.sd_X7vnJ2QLW9ZPUFmH(bh);
+      //appendnew_next_snackbar
+      return (
+        // formatting output variables
+        {
+          input: {},
+          local: {},
+        }
+      );
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_fpmuSZheG6X5M6lD');
     }
   }
 
@@ -207,7 +230,7 @@ export class apiservices {
         reportProgress: undefined,
         headers: {},
         params: {},
-        body: bh.input.incident
+        body: bh.input.incident,
       };
       bh.local.apiresult = await this.sdService.nHttpRequest(requestOptions);
       bh = await this.sd_6dSzyRLfwVAI3yFd(bh);
@@ -245,7 +268,7 @@ export class apiservices {
         reportProgress: undefined,
         headers: {},
         params: {},
-        body: undefined
+        body: undefined,
       };
       bh.local.apiresult = await this.sdService.nHttpRequest(requestOptions);
       bh = await this.sd_kJcsmGU197djynFc(bh);
@@ -323,7 +346,7 @@ export class apiservices {
         reportProgress: undefined,
         headers: {},
         params: {},
-        body: bh.input.incident
+        body: bh.input.incident,
       };
       bh.local.apiresult = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_updateIncident
@@ -347,7 +370,7 @@ export class apiservices {
         reportProgress: undefined,
         headers: {},
         params: {},
-        body: undefined
+        body: undefined,
       };
       bh.local.apiresult = await this.sdService.nHttpRequest(requestOptions);
       bh = await this.sd_PrFkTkFTmw1mYQcK(bh);
@@ -368,6 +391,21 @@ export class apiservices {
       return bh;
     } catch (e) {
       return await this.errorHandler(bh, e, 'sd_PrFkTkFTmw1mYQcK');
+    }
+  }
+
+  async sd_X7vnJ2QLW9ZPUFmH(bh) {
+    try {
+      this.matSnackBar.open(bh.input.obj.message, 'close', {
+        duration: 3000,
+        direction: 'ltr',
+        horizontalPosition: 'end',
+        verticalPosition: 'bottom',
+      });
+      //appendnew_next_sd_X7vnJ2QLW9ZPUFmH
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_X7vnJ2QLW9ZPUFmH');
     }
   }
 
