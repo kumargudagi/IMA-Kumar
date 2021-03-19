@@ -1,6 +1,7 @@
 {
     "2c3e4033-7b70-29b5-f547-80abee96ab82": {
         "paletteKey": "FlexLayoutCol",
+        "isCommented": "false",
         "designerReference": [
             {
                 "_key": "componentLabel",
@@ -68,6 +69,7 @@
             "paletteKey": "ad-card",
             "parentEditorKey": "2c3e4033-7b70-29b5-f547-80abee96ab82",
             "isAdvancedComponent": true,
+            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -99,6 +101,7 @@
                 "paletteKey": "ng-card-content",
                 "parentEditorKey": "cb54a151-60c3-a3bf-598d-18468d452f8d",
                 "isAdvancedChildComponent": true,
+                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "style",
@@ -122,6 +125,7 @@
                 "3288e1ca-795e-6fda-b755-3dc36bcbf8ec": {
                     "paletteKey": "FlexLayoutRow",
                     "parentEditorKey": "e7549885-e57d-17db-131b-4c5566362dda",
+                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "componentLabel",
@@ -188,6 +192,7 @@
                     "612fe7c5-ec42-8b88-4207-9ff9adcf8fe0": {
                         "paletteKey": "FlexLayoutRow",
                         "parentEditorKey": "3288e1ca-795e-6fda-b755-3dc36bcbf8ec",
+                        "isCommented": "false",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -255,6 +260,7 @@
                             "paletteKey": "Html5",
                             "parentEditorKey": "612fe7c5-ec42-8b88-4207-9ff9adcf8fe0",
                             "isAdvancedComponent": true,
+                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -441,6 +447,7 @@
                                 "paletteKey": "html-editor",
                                 "parentEditorKey": "da9ac481-4428-3da9-6ff5-aea0a07bb0db",
                                 "isAdvancedChildComponent": true,
+                                "isCommented": "false",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -467,6 +474,7 @@
                     "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0": {
                         "paletteKey": "FlexLayoutRow",
                         "parentEditorKey": "3288e1ca-795e-6fda-b755-3dc36bcbf8ec",
+                        "isCommented": "false",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -533,6 +541,7 @@
                         "d555bf20-be61-3b0d-4037-04b60ca53dfe": {
                             "paletteKey": "NG-FabButton",
                             "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",
+                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -594,6 +603,7 @@
                         "42cc9c16-f71f-c3fa-5e20-b8add2e64944": {
                             "paletteKey": "NG-FabButton",
                             "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",
+                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -655,6 +665,7 @@
                         "8b11d052-d735-31dd-bdc5-38abd96cd203": {
                             "paletteKey": "NG-FabButton",
                             "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",
+                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -716,6 +727,7 @@
                         "88ef34ae-b75c-6ad7-d305-c37afcf08108": {
                             "paletteKey": "NG-FabButton",
                             "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",
+                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "style",
@@ -778,5 +790,71 @@
                 }
             }
         }
+    },
+    "8bb80b5f-953f-badc-8738-d8fa4e8f91b3": {
+        "paletteKey": "FlexLayoutCol",
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Column",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ]
     }
 }

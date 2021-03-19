@@ -21,7 +21,7 @@ import { HeroService } from '../../services/hero/hero.service';
 
 export class header_nav_barComponent extends NBaseComponent implements OnInit {
 
-    constructor(public dialog: MatDialog, public nids:NeutrinosOAuthClientService,) {
+    constructor(public dialog: MatDialog, public nids:NeutrinosOAuthClientService) {
         super();
     }
 
