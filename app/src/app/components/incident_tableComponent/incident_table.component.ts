@@ -9,6 +9,7 @@ import { mat_dialogueComponent } from '../mat_dialogueComponent/mat_dialogue.com
 import { apiservices } from 'app/sd-services/apiservices';
 import { DatePipe } from '@angular/common';
 import {MatSort} from '@angular/material/sort'; 
+import {MatPaginator} from '@angular/material/paginator';
 
 
 /*
@@ -34,7 +35,7 @@ export class incident_tableComponent extends NBaseComponent implements OnInit {
 
     @ViewChild(MatTable, { static: true }) table: MatTable<any>;
     @ViewChild(MatSort) sort: MatSort;
-
+    @ViewChild(MatPaginator) paginator: MatPaginator;
    
     constructor(public service: apiservices, public dialog: MatDialog) {
         super(); 
@@ -49,6 +50,8 @@ export class incident_tableComponent extends NBaseComponent implements OnInit {
         let data = (await this.service.getIncList()).local.apiresult;
         console.log("get incident data", data)
         this.datasource = new MatTableDataSource(data);
+          this.datasource.paginator = this.paginator;
+          this.datasource.sort = this.sort;
     }
 
     async edit(data) {
@@ -71,6 +74,10 @@ export class incident_tableComponent extends NBaseComponent implements OnInit {
         this.getincident()
     }
 
+ngAfterViewInit() {
+  
+    // this.dataSource.sort = this.sort;
+  }
     applyFilter(event: Event) {
         const filterValue = (event.target as HTMLInputElement).value;
         this.datasource.filter = filterValue.trim().toLowerCase();

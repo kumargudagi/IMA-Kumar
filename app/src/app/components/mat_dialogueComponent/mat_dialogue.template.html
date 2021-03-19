@@ -25,7 +25,7 @@
         <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
         <mat-datepicker #picker [disabled]="false"></mat-datepicker>
 
-      </mat-form-field><button mat-raised-button [mat-dialog-close]="latestincident" *ngIf="!isfrom_update" color="primary" (click)="submit()" [disabled]="incidentform.invalid">Submit</button><button mat-raised-button *ngIf="isfrom_update" [mat-dialog-close]="latestincident" color="primary" (click)="updateIncident()">Update</button>
+      </mat-form-field><button mat-raised-button routerLink="/incident_table" [mat-dialog-close]="latestincident" *ngIf="!isfrom_update" color="primary" (click)="submit()" [disabled]="incidentform.invalid">Submit</button><button mat-raised-button *ngIf="isfrom_update" [mat-dialog-close]="latestincident" color="primary" (click)="updateIncident()">Update</button>
     </div>
   </form>
 </div>

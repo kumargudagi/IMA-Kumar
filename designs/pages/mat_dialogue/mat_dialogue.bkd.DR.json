@@ -1500,7 +1500,7 @@
                         },
                         {
                             "_key": "routerLink",
-                            "_value": "",
+                            "_value": "/incident_table",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
