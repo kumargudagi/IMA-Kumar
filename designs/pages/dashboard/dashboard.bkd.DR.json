@@ -1,6 +1,7 @@
 {
     "5d0838e1-3fb5-487e-c9c2-6008fb078ab5": {
         "paletteKey": "FlexLayoutRow",
+        "isCommented": "false",
         "designerReference": [
             {
                 "_key": "componentLabel",
@@ -313,6 +314,7 @@
         "3441fe7b-60bd-1380-6aa9-d475e0b5b8ed": {
             "paletteKey": "FlexLayoutCol",
             "parentEditorKey": "5d0838e1-3fb5-487e-c9c2-6008fb078ab5",
+            "isCommented": "false",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -380,6 +382,7 @@
                 "paletteKey": "ad-card",
                 "parentEditorKey": "3441fe7b-60bd-1380-6aa9-d475e0b5b8ed",
                 "isAdvancedComponent": true,
+                "isCommented": "false",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -444,6 +447,7 @@
                     "paletteKey": "ng-card-content",
                     "parentEditorKey": "7b9e8947-d8ce-2a0a-4283-1910b5ccea67",
                     "isAdvancedChildComponent": true,
+                    "isCommented": "false",
                     "designerReference": [
                         {
                             "_key": "style",
@@ -503,6 +507,318 @@
                             {
                                 "_key": "[labels]",
                                 "_value": "pieChartPriorityLabels",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[options]",
+                                "_value": "pieChartOptions",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[colors]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[legend]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(chartHover)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(chartClick)",
+                                "_value": "mychartclick()",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxLayout",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "fxFlex",
+                                "_value": "100",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "563b842f-f0e0-6067-b526-6143d962aa92": {
+        "paletteKey": "FlexLayoutRow",
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Row",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "67b41d02-20c7-6795-f5da-c916d67ca94a": {
+            "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "563b842f-f0e0-6067-b526-6143d962aa92",
+            "isCommented": "false",
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "40428366-66fd-de52-edf3-18ca7177e110": {
+                "paletteKey": "ad-card",
+                "parentEditorKey": "67b41d02-20c7-6795-f5da-c916d67ca94a",
+                "isAdvancedComponent": true,
+                "isCommented": "false",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Card",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "width: 500px;",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "dav",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "tabindex",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ],
+                "178086bf-f82e-f49f-f2c1-a8cc379cc67c": {
+                    "paletteKey": "ng-card-title",
+                    "parentEditorKey": "40428366-66fd-de52-edf3-18ca7177e110",
+                    "isAdvancedChildComponent": true,
+                    "isCommented": "false",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "dav",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "Title",
+                            "_value": "Subject Total Incident ",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ]
+                },
+                "52b67c4a-6e93-8d0a-7daf-d576ea345513": {
+                    "paletteKey": "ng-card-content",
+                    "parentEditorKey": "40428366-66fd-de52-edf3-18ca7177e110",
+                    "isAdvancedChildComponent": true,
+                    "isCommented": "false",
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "dav",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "align",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ],
+                    "118a5a9c-d877-c497-022f-8f1ace5f44a2": {
+                        "paletteKey": "NG-ng-pie-chart",
+                        "parentEditorKey": "52b67c4a-6e93-8d0a-7daf-d576ea345513",
+                        "isCommented": "false",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Pie Chart",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[data]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[datasets]",
+                                "_value": "pieChartSubjectData",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[labels]",
+                                "_value": "pieChartSubjectLabels",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },

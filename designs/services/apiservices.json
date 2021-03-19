@@ -314,7 +314,8 @@
             ]
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "apiservices"
     },
     {
         "id": "sd_cMyU7LGFreEkpth8",
@@ -735,11 +736,14 @@
         "nodeType": "flow",
         "name": "pie",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlValue": "/userincident",
         "url": "/userincident",
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "bh",
             "mapVarValue": ""
@@ -751,9 +755,11 @@
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
         "inputVariables": [],
         "inputParams": [],
@@ -830,11 +836,14 @@
         "nodeType": "flow",
         "name": "prioritypie",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlValue": "/priorityincident",
         "url": "/priorityincident",
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "bh",
             "mapVarValue": ""
@@ -846,9 +855,11 @@
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
         "inputVariables": [],
         "inputParams": [],
@@ -878,6 +889,101 @@
         "__n_excludedFromValidation__": {},
         "x": 405,
         "y": 1200,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_mLbJCdXrKwB5MN0w",
+        "type": "Start",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "dashboardsubjectchart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "dashboardsubjectchart",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 205,
+        "y": 1340,
+        "wires": [
+            [
+                "sd_000mNZUvXWW0rrvE"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "apiservices"
+    },
+    {
+        "id": "sd_000mNZUvXWW0rrvE",
+        "type": "CallSSDApi",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "subjectpie",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "/subjectincident",
+        "url": "/subjectincident",
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "subjectpie",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 325,
+        "y": 1340,
+        "wires": [
+            [
+                "sd_nMpHwCPicUqFW6i4"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_nMpHwCPicUqFW6i4",
+        "type": "Script",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"incideclient\",bh)",
+        "functionName": "sd_nMpHwCPicUqFW6i4",
+        "category": "Function",
+        "__n_excludedFromValidation__": {},
+        "x": 485,
+        "y": 1340,
         "wires": [
             []
         ],

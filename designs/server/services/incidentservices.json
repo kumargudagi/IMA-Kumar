@@ -1155,6 +1155,7 @@
                 }
             }
         },
+        "uploadFileOptions": {},
         "editableListData": {
             "responses": [],
             "params": [],
@@ -1336,6 +1337,221 @@
         "wires": [
             [
                 "sd_jEKCirzkt2t1saVg"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_98mdI8Yqvw40MeHc",
+        "type": "HttpIn",
+        "z": "SSD_SERVICE_ID_sd_TiZuqcyUoKUHfgKT",
+        "viewType": "server",
+        "nodeType": "start",
+        "name": "gettotalSubjectperUser",
+        "path": "/subjectincident",
+        "uploadpath": "",
+        "summary": "",
+        "description": "",
+        "method": "get",
+        "sequenceId": "",
+        "consumes": "",
+        "produces": "",
+        "filetype": "path",
+        "acceptFileUpload": false,
+        "httpOptions": {
+            "/subjectincident": {
+                "get": {
+                    "summary": "",
+                    "description": "",
+                    "consumes": [],
+                    "produces": [],
+                    "parameters": [],
+                    "responses": {}
+                }
+            }
+        },
+        "editableListData": {
+            "responses": [],
+            "params": [],
+            "produces": [],
+            "consumes": []
+        },
+        "inputs": 0,
+        "outputs": 1,
+        "category": "HTTP",
+        "__ssdTypeInputs__": {
+            "uploadpath": {
+                "type": "str",
+                "value": "",
+                "nullable": "true",
+                "nullableValue": "",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 145,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_8BpHPZI6epkSYNHq"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "incidentservices",
+        "functionName": "sd_98mdI8Yqvw40MeHc"
+    },
+    {
+        "id": "sd_1mNs5oSzoUYPxe4k",
+        "type": "Mongodb",
+        "z": "SSD_SERVICE_ID_sd_TiZuqcyUoKUHfgKT",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "databaseConfig": "sd_9VADWofZ1fADDhtS",
+        "collection": "\"incident\"",
+        "options": "bh.local.options",
+        "resultMapping": "bh.local.result",
+        "operation": "aggregate",
+        "argumentArray": [
+            "aggregate"
+        ],
+        "aggregate": "bh.local.query",
+        "operations": "",
+        "query": "bh.local.query",
+        "fieldOrSpec": "",
+        "filter": "bh.local.filter",
+        "key": "",
+        "docId": "",
+        "indexName": "",
+        "replacement": "",
+        "update": "bh.input.body",
+        "xAxis": "",
+        "yAxis": "",
+        "indexes": "",
+        "docs": "",
+        "document": "bh.input.body",
+        "newName": "",
+        "doc": "",
+        "filePath": "",
+        "fileName": "",
+        "pipeline": "",
+        "functionName": "sd_1mNs5oSzoUYPxe4k",
+        "category": "Storage",
+        "__ssdTypeInputs__": {
+            "collection": {
+                "type": "str",
+                "value": "incident",
+                "constant": false
+            },
+            "options": {
+                "type": "bh",
+                "value": "",
+                "nullable": "true",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "bh.local",
+                "value": "result",
+                "constant": false
+            },
+            "query": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            },
+            "document": {
+                "type": "bh.input",
+                "value": "body",
+                "constant": false
+            },
+            "filter": {
+                "type": "bh.local",
+                "value": "filter",
+                "constant": false
+            },
+            "update": {
+                "type": "bh.input",
+                "value": "body",
+                "constant": false
+            },
+            "aggregate": {
+                "type": "bh.local",
+                "value": "query",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 350,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_hPNQugiMOwHyENxx"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_hPNQugiMOwHyENxx",
+        "type": "HttpOut",
+        "z": "SSD_SERVICE_ID_sd_TiZuqcyUoKUHfgKT",
+        "viewType": "server",
+        "nodeType": "flow",
+        "name": "",
+        "headers": {},
+        "responseBody": {
+            "type": "bh.local",
+            "value": "result",
+            "ssd_typedInputField": true
+        },
+        "httpcode": {
+            "type": "num",
+            "value": 200,
+            "ssd_typedInputField": true
+        },
+        "responseType": "obj",
+        "responseMapping": {
+            "status": 200,
+            "obj": "bh.local.result",
+            "send": "bh.local.result"
+        },
+        "cookies": [],
+        "inputs": 1,
+        "outputs": 0,
+        "editableListData": {
+            "headers": []
+        },
+        "cookiesList": {},
+        "switchStates": {
+            "headers": "Map",
+            "cookies": "Map"
+        },
+        "functionName": "sd_hPNQugiMOwHyENxx",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 445,
+        "y": 1000,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_8BpHPZI6epkSYNHq",
+        "type": "Script",
+        "z": "SSD_SERVICE_ID_sd_TiZuqcyUoKUHfgKT",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.query = [{\n     \"$group\": {\n     _id: \"$subject\",\n     count:{$sum:1}\n     }\n }]\n\n//  db.incident.aggregate([{\"$group\": { _id: \"$priority\", count:{$sum:1} } }])",
+        "functionName": "sd_8BpHPZI6epkSYNHq",
+        "category": "Function",
+        "__n_excludedFromValidation__": {},
+        "x": 250,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_1mNs5oSzoUYPxe4k"
             ]
         ],
         "generateNext": false,

@@ -264,6 +264,31 @@ export class apiservices {
     }
   }
 
+  async dashboardsubjectchart(...others) {
+    try {
+      var bh = {
+        input: {},
+        local: {
+          result: undefined,
+        },
+      };
+      bh = this.sdService.__constructDefault(bh);
+      bh = await this.subjectpie(bh);
+      //appendnew_next_dashboardsubjectchart
+      return (
+        // formatting output variables
+        {
+          input: {},
+          local: {
+            result: bh.local.result,
+          },
+        }
+      );
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_mLbJCdXrKwB5MN0w');
+    }
+  }
+
   //appendnew_flow_apiservices_start
 
   async addIncident(bh) {
@@ -526,6 +551,41 @@ export class apiservices {
       return bh;
     } catch (e) {
       return await this.errorHandler(bh, e, 'sd_hktrfuGj1YU7NbEL');
+    }
+  }
+
+  async subjectpie(bh) {
+    try {
+      let basePath = bh.system.environment.properties.ssdURL.endsWith('/')
+        ? bh.system.environment.properties.ssdURL
+        : bh.system.environment.properties.ssdURL + '/';
+      let url = `subjectincident/`;
+      let finalUrl = basePath + url;
+      let requestOptions = {
+        url: finalUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined,
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_nMpHwCPicUqFW6i4(bh);
+      //appendnew_next_subjectpie
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_000mNZUvXWW0rrvE');
+    }
+  }
+
+  async sd_nMpHwCPicUqFW6i4(bh) {
+    try {
+      console.log('incideclient', bh);
+      //appendnew_next_sd_nMpHwCPicUqFW6i4
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_nMpHwCPicUqFW6i4');
     }
   }
 

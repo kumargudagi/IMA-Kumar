@@ -24,6 +24,9 @@ arr2=[];
 arr3=[];
 arr4=[];
 
+arr5=[];
+arr6=[]
+
 pieChartData = [{
   data:[300, 500, 100]}
                ];
@@ -32,6 +35,12 @@ pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
 
 pieChartPriorityLabels:  string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];;
 pieChartPriorityData =  [{
+  data:[300, 500, 100]}
+               ];;
+
+
+pieChartSubjectLabels:  string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];;
+pieChartSubjectData =  [{
   data:[300, 500, 100]}
                ];;
 
@@ -51,6 +60,7 @@ pieChartOptions: any = {
     ngOnInit() {
           this.userpie()
           this.prioritypie()
+          this.subjectpie()
     }
 
     async userpie(){
@@ -76,5 +86,19 @@ pieChartOptions: any = {
 
         this.pieChartPriorityData = [{data:this.arr3}];
         this.pieChartPriorityLabels = this.arr4;
+
+     }
+
+
+     async subjectpie(){
+        let data = (await this.service.dashboardsubjectchart()).local.result;
+        console.log("ddpr222",data)
+        for(let i=0; i<data.length;i++){
+            this.arr5.push(data[i].count)
+            this.arr6.push(data[i]._id)
+        }
+
+        this.pieChartSubjectData = [{data:this.arr5}];
+        this.pieChartSubjectLabels = this.arr6;
     }
 }

@@ -409,6 +409,58 @@ export class incidentservices {
         this.generatedMiddlewares
       )
     );
+
+    if (!this.swaggerDocument['paths']['/subjectincident']) {
+      this.swaggerDocument['paths']['/subjectincident'] = {
+        get: {
+          summary: '',
+          description: '',
+          consumes: [],
+          produces: [],
+          parameters: [],
+          responses: {},
+        },
+      };
+    } else {
+      this.swaggerDocument['paths']['/subjectincident']['get'] = {
+        summary: '',
+        description: '',
+        consumes: [],
+        produces: [],
+        parameters: [],
+        responses: {},
+      };
+    }
+    this.app['get'](
+      `${this.serviceBasePath}/subjectincident`,
+      cookieParser(),
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'pre',
+        this.generatedMiddlewares
+      ),
+
+      async (req, res, next) => {
+        let bh = {};
+        try {
+          bh = this.sdService.__constructDefault(
+            { local: {}, input: {} },
+            req,
+            res,
+            next
+          );
+          bh = await this.sd_8BpHPZI6epkSYNHq(bh);
+          //appendnew_next_sd_98mdI8Yqvw40MeHc
+        } catch (e) {
+          return await this.errorHandler(bh, e, 'sd_98mdI8Yqvw40MeHc');
+        }
+      },
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'post',
+        this.generatedMiddlewares
+      )
+    );
     //appendnew_flow_incidentservices_HttpIn
   }
   //   service flows_incidentservices
@@ -677,6 +729,52 @@ export class incidentservices {
       return bh;
     } catch (e) {
       return await this.errorHandler(bh, e, 'sd_7A08w31rrko8bFLd');
+    }
+  }
+
+  async sd_8BpHPZI6epkSYNHq(bh) {
+    try {
+      bh.local.query = [
+        {
+          $group: {
+            _id: '$subject',
+            count: { $sum: 1 },
+          },
+        },
+      ];
+
+      //  db.incident.aggregate([{"$group": { _id: "$priority", count:{$sum:1} } }])
+      bh = await this.sd_1mNs5oSzoUYPxe4k(bh);
+      //appendnew_next_sd_8BpHPZI6epkSYNHq
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_8BpHPZI6epkSYNHq');
+    }
+  }
+
+  async sd_1mNs5oSzoUYPxe4k(bh) {
+    try {
+      bh.local.result = await MongoPersistance.getInstance().aggregate(
+        'sd_9VADWofZ1fADDhtS',
+        'incident',
+        bh.local.query,
+        bh.local.options
+      );
+      await this.sd_hPNQugiMOwHyENxx(bh);
+      //appendnew_next_sd_1mNs5oSzoUYPxe4k
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_1mNs5oSzoUYPxe4k');
+    }
+  }
+
+  async sd_hPNQugiMOwHyENxx(bh) {
+    try {
+      bh.web.res.status(200).send(bh.local.result);
+
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_hPNQugiMOwHyENxx');
     }
   }
 
