@@ -1506,7 +1506,7 @@
                         },
                         {
                             "_key": "[mat-dialog-close]",
-                            "_value": "",
+                            "_value": "latestincident",
                             "_type": "kv",
                             "_attrDef": "c"
                         },
