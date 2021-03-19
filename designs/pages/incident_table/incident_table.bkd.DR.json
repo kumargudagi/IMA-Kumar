@@ -761,6 +761,51 @@
                             "_attrDef": "c"
                         }
                     ],
+                    "c021ef78-f800-6038-a71d-34e40e5647be": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "ed1034af-6bea-1126-f417-885bce6dddd6",
+                        "isAdvancedChildComponent": true,
+                        "designerReference": [
+                            {
+                                "_key": "Header Label",
+                                "_value": "userName",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "matSortHeaderColumn",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "Mapping",
+                                "_value": "{{table.username}}",
+                                "_type": "ma",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "columnName",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "headerclass",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "columnclass",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    },
                     "54686c4a-99d0-37f7-95e1-e37939d80f44": {
                         "paletteKey": "ng-table-filter",
                         "parentEditorKey": "ed1034af-6bea-1126-f417-885bce6dddd6",

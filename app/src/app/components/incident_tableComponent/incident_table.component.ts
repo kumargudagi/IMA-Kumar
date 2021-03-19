@@ -43,17 +43,12 @@ export class incident_tableComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
         this.getincident()
     }
-//      ngAfterViewInit() {
-//     this.datasource.sort = this.sort;
-//   }
 
 
     async getincident() {
         let data = (await this.service.getIncList()).local.apiresult;
         console.log("get incident data", data)
-        // this.datasource = data
         this.datasource = new MatTableDataSource(data);
-        console.log("this.datasource==", this.datasource)
     }
 
     async edit(data) {
