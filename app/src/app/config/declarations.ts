@@ -15,6 +15,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-dashboardComponent
+import { dashboardComponent } from '../components/dashboardComponent/dashboard.component';
 //CORE_REFERENCE_IMPORT-shoppingcartComponent
 import { shoppingcartComponent } from '../components/shoppingcartComponent/shoppingcart.component';
 //CORE_REFERENCE_IMPORT-updatetableComponent
@@ -52,6 +54,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dashboardComponent
+dashboardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-shoppingcartComponent
 shoppingcartComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-updatetableComponent
@@ -88,5 +92,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'header_nav_bar', component: header_nav_barComponent, canActivate: [NeutrinosAuthGuardService]},{path: 'incident_table', component: incident_tableComponent},{path: 'updatetable', component: updatetableComponent},{path: 'shoppingcart', component: shoppingcartComponent},{path: '', redirectTo: 'header_nav_bar', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'header_nav_bar', component: header_nav_barComponent, canActivate: [NeutrinosAuthGuardService]},{path: 'incident_table', component: incident_tableComponent},{path: 'updatetable', component: updatetableComponent},{path: 'shoppingcart', component: shoppingcartComponent},{path: 'dashboard', component: dashboardComponent},{path: '', redirectTo: 'header_nav_bar', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

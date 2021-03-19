@@ -8,6 +8,8 @@
         </div>
         <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-fab style="font-size: 30px;" color="primary" (click)="openDialog()">
             <mat-icon>add_circle</mat-icon>
+          </button><button mat-fab style="font-size: 30px;" color="primary" routerLink="/dashboard">
+            <mat-icon>dashboard</mat-icon>
           </button><button mat-fab color="primary">
             <mat-icon>home</mat-icon>
           </button><button mat-fab color="primary" (click)="logout()">

@@ -2,7 +2,7 @@
 import { Component, OnInit, Inject, Optional } from '@angular/core'
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'
-
+import { NeutrinosOAuthClientService } from 'neutrinos-oauth-client';
 import { apiservices } from 'app/sd-services/apiservices';
 import { incident } from 'app/models';
 
@@ -29,7 +29,7 @@ export class mat_dialogueComponent extends NBaseComponent implements OnInit {
     data
     latestincident
     incidentdata
-    constructor(public fb: FormBuilder, public service: apiservices, public dialogRef: MatDialogRef<mat_dialogueComponent>, @Optional() @Inject(MAT_DIALOG_DATA) public data1: any) {
+    constructor(public fb: FormBuilder,public nids:NeutrinosOAuthClientService, public service: apiservices, public dialogRef: MatDialogRef<mat_dialogueComponent>, @Optional() @Inject(MAT_DIALOG_DATA) public data1: any) {
         super();
         console.log("----",data1); 
         this.incidentdata= data1
@@ -45,16 +45,27 @@ export class mat_dialogueComponent extends NBaseComponent implements OnInit {
     // }
 
     ngOnInit() {
+                console.log("userinfo",this.nids)
+        let user = this.nids.userInfo;
+        console.log("userrrrrrrrrrr",user)
         this.incidentform = this.fb.group({
             subject: ['', [Validators.required, Validators.pattern('[a-zA-Z ]*')]],
             description: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9 \'\-]+$')]],
             priority: ['', [Validators.required, Validators.pattern('^[0-9 \'\-]+$')]],
             incident_date: [Date, [Validators.required]],
-            incidentId:['']
+            incidentId:[''],
+            firstName:[''],
+            lastName:[''],
+            username:[''],
+            role:['']
         })
 
+            this.incidentform.get("firstName").patchValue(this.nids.userInfo.firstName);
+            this.incidentform.get("lastName").patchValue(this.nids.userInfo.lastName);
+            this.incidentform.get("username").patchValue(this.nids.userInfo.username);
+
         if(this.isfrom_update){
- this.incidentform.get("subject").patchValue(this.incidentdata.subject);
+        this.incidentform.get("subject").patchValue(this.incidentdata.subject);
         this.incidentform.get("priority").patchValue(this.incidentdata.priority);
         this.incidentform.get("description").patchValue(this.incidentdata.description);
         this.incidentform.get("incident_date").patchValue(this.incidentdata.incident_date);

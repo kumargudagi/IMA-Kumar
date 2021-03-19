@@ -18,6 +18,10 @@
             "component": "shoppingcartComponent"
         },
         {
+            "path": "dashboard",
+            "component": "dashboardComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "header_nav_bar",
             "pathMatch": "full",

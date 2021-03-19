@@ -2,7 +2,7 @@ let instance = null;
 //CORE_REFERENCE_IMPORTS
 //append_imports_start
 
-import * as httpStatusCodes from 'http-status-codes'; //_splitter_
+import { StatusCodes as httpStatusCodes } from 'http-status-codes'; //_splitter_
 import * as cookieParser from 'cookie-parser'; //_splitter_
 import { Readable } from 'stream'; //_splitter_
 import { setInterval } from 'timers'; //_splitter_
@@ -16,7 +16,6 @@ import log from '../utils/Logger'; //_splitter_
 import { MongoPersistance } from '../utils/ndefault-mongodb/Mongodb/MongoPersistance'; //_splitter_
 import * as mongodb from 'mongodb'; //_splitter_
 //append_imports_end
-
 export class incidentservices {
   private sdService = new SDBaseService();
   private app;
@@ -107,8 +106,8 @@ export class incidentservices {
           consumes: [],
           produces: [],
           parameters: [],
-          responses: {}
-        }
+          responses: {},
+        },
       };
     } else {
       this.swaggerDocument['paths']['/incident']['post'] = {
@@ -117,7 +116,7 @@ export class incidentservices {
         consumes: [],
         produces: [],
         parameters: [],
-        responses: {}
+        responses: {},
       };
     }
     this.app['post'](
@@ -159,8 +158,8 @@ export class incidentservices {
           consumes: [],
           produces: [],
           parameters: [],
-          responses: {}
-        }
+          responses: {},
+        },
       };
     } else {
       this.swaggerDocument['paths']['/incident']['get'] = {
@@ -169,7 +168,7 @@ export class incidentservices {
         consumes: [],
         produces: [],
         parameters: [],
-        responses: {}
+        responses: {},
       };
     }
     this.app['get'](
@@ -211,8 +210,8 @@ export class incidentservices {
           consumes: [],
           produces: [],
           parameters: [],
-          responses: {}
-        }
+          responses: {},
+        },
       };
     } else {
       this.swaggerDocument['paths']['/incident/{id}']['put'] = {
@@ -221,7 +220,7 @@ export class incidentservices {
         consumes: [],
         produces: [],
         parameters: [],
-        responses: {}
+        responses: {},
       };
     }
     this.app['put'](
@@ -263,8 +262,8 @@ export class incidentservices {
           consumes: [],
           produces: [],
           parameters: [],
-          responses: {}
-        }
+          responses: {},
+        },
       };
     } else {
       this.swaggerDocument['paths']['/incident/{id}']['delete'] = {
@@ -273,7 +272,7 @@ export class incidentservices {
         consumes: [],
         produces: [],
         parameters: [],
-        responses: {}
+        responses: {},
       };
     }
     this.app['delete'](
@@ -298,6 +297,110 @@ export class incidentservices {
           //appendnew_next_sd_H1Chrh2kUGYm8rvh
         } catch (e) {
           return await this.errorHandler(bh, e, 'sd_H1Chrh2kUGYm8rvh');
+        }
+      },
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'post',
+        this.generatedMiddlewares
+      )
+    );
+
+    if (!this.swaggerDocument['paths']['/userincident']) {
+      this.swaggerDocument['paths']['/userincident'] = {
+        get: {
+          summary: '',
+          description: '',
+          consumes: [],
+          produces: [],
+          parameters: [],
+          responses: {},
+        },
+      };
+    } else {
+      this.swaggerDocument['paths']['/userincident']['get'] = {
+        summary: '',
+        description: '',
+        consumes: [],
+        produces: [],
+        parameters: [],
+        responses: {},
+      };
+    }
+    this.app['get'](
+      `${this.serviceBasePath}/userincident`,
+      cookieParser(),
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'pre',
+        this.generatedMiddlewares
+      ),
+
+      async (req, res, next) => {
+        let bh = {};
+        try {
+          bh = this.sdService.__constructDefault(
+            { local: {}, input: {} },
+            req,
+            res,
+            next
+          );
+          bh = await this.sd_owxmxnyxlZBb7ogo(bh);
+          //appendnew_next_sd_1N3xl9FIVk1nbC7q
+        } catch (e) {
+          return await this.errorHandler(bh, e, 'sd_1N3xl9FIVk1nbC7q');
+        }
+      },
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'post',
+        this.generatedMiddlewares
+      )
+    );
+
+    if (!this.swaggerDocument['paths']['/priorityincident']) {
+      this.swaggerDocument['paths']['/priorityincident'] = {
+        get: {
+          summary: '',
+          description: '',
+          consumes: [],
+          produces: [],
+          parameters: [],
+          responses: {},
+        },
+      };
+    } else {
+      this.swaggerDocument['paths']['/priorityincident']['get'] = {
+        summary: '',
+        description: '',
+        consumes: [],
+        produces: [],
+        parameters: [],
+        responses: {},
+      };
+    }
+    this.app['get'](
+      `${this.serviceBasePath}/priorityincident`,
+      cookieParser(),
+      this.sdService.getMiddlesWaresBySequenceId(
+        null,
+        'pre',
+        this.generatedMiddlewares
+      ),
+
+      async (req, res, next) => {
+        let bh = {};
+        try {
+          bh = this.sdService.__constructDefault(
+            { local: {}, input: {} },
+            req,
+            res,
+            next
+          );
+          bh = await this.sd_qO4vBljoroCk5CZA(bh);
+          //appendnew_next_sd_2caXk7XBzHO5Bkke
+        } catch (e) {
+          return await this.errorHandler(bh, e, 'sd_2caXk7XBzHO5Bkke');
         }
       },
       this.sdService.getMiddlesWaresBySequenceId(
@@ -404,7 +507,7 @@ export class incidentservices {
       bh.local.filter = { _id: new ObjectID(bh.input.params.id) };
       bh.input.body = { $set: bh.input.body };
       bh.local.options = {
-        new: true
+        new: true,
         // upsert: true,
       };
       console.log('bh.local.filter', bh.local.filter);
@@ -482,6 +585,98 @@ export class incidentservices {
       return bh;
     } catch (e) {
       return await this.errorHandler(bh, e, 'sd_j7VEDqNr7TVz9KGv');
+    }
+  }
+
+  async sd_owxmxnyxlZBb7ogo(bh) {
+    try {
+      bh.local.query = [
+        {
+          $group: {
+            _id: '$username',
+            count: { $sum: 1 },
+          },
+        },
+      ];
+
+      //  db.incident.aggregate([{"$group": { _id: "$priority", count:{$sum:1} } }])
+      bh = await this.sd_fHRYzDTXjKWIgm6m(bh);
+      //appendnew_next_sd_owxmxnyxlZBb7ogo
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_owxmxnyxlZBb7ogo');
+    }
+  }
+
+  async sd_fHRYzDTXjKWIgm6m(bh) {
+    try {
+      bh.local.result = await MongoPersistance.getInstance().aggregate(
+        'sd_9VADWofZ1fADDhtS',
+        'incident',
+        bh.local.query,
+        bh.local.options
+      );
+      await this.sd_cBlhO5izrmBZNDuO(bh);
+      //appendnew_next_sd_fHRYzDTXjKWIgm6m
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_fHRYzDTXjKWIgm6m');
+    }
+  }
+
+  async sd_cBlhO5izrmBZNDuO(bh) {
+    try {
+      bh.web.res.status(200).send(bh.local.result);
+
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_cBlhO5izrmBZNDuO');
+    }
+  }
+
+  async sd_qO4vBljoroCk5CZA(bh) {
+    try {
+      bh.local.query = [
+        {
+          $group: {
+            _id: '$priority',
+            count: { $sum: 1 },
+          },
+        },
+      ];
+
+      //  db.incident.aggregate([{"$group": { _id: "$priority", count:{$sum:1} } }])
+      bh = await this.sd_jEKCirzkt2t1saVg(bh);
+      //appendnew_next_sd_qO4vBljoroCk5CZA
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_qO4vBljoroCk5CZA');
+    }
+  }
+
+  async sd_jEKCirzkt2t1saVg(bh) {
+    try {
+      bh.local.result = await MongoPersistance.getInstance().aggregate(
+        'sd_9VADWofZ1fADDhtS',
+        'incident',
+        bh.local.query,
+        bh.local.options
+      );
+      await this.sd_7A08w31rrko8bFLd(bh);
+      //appendnew_next_sd_jEKCirzkt2t1saVg
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_jEKCirzkt2t1saVg');
+    }
+  }
+
+  async sd_7A08w31rrko8bFLd(bh) {
+    try {
+      bh.web.res.status(200).send(bh.local.result);
+
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_7A08w31rrko8bFLd');
     }
   }
 

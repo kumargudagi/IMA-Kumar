@@ -591,6 +591,67 @@
                                 }
                             ]
                         },
+                        "42cc9c16-f71f-c3fa-5e20-b8add2e64944": {
+                            "paletteKey": "NG-FabButton",
+                            "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "font-size: 30px;",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "dav",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "fabicon",
+                                    "_value": "dashboard",
+                                    "_type": "a",
+                                    "_attrDef": "p",
+                                    "_useAsLabel": true
+                                },
+                                {
+                                    "_key": "color",
+                                    "_value": "primary",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "(click)",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "[disabled]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "[disableRipple]",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "type",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "routerLink",
+                                    "_value": "/dashboard",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        },
                         "8b11d052-d735-31dd-bdc5-38abd96cd203": {
                             "paletteKey": "NG-FabButton",
                             "parentEditorKey": "3ddb0eef-9960-3ac2-9ca9-1bf9633fb7b0",

@@ -28,14 +28,15 @@ export class header_nav_barComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
         console.log("userinfo",this.nids)
         let user = this.nids.userInfo;
-        let filterteam = user.teams.filter((ele:any)=>{
-            console.log("displayName",ele.displayName)
+        // let filterteam = user.teams.filter((ele:any)=>{
+        //     console.log("displayName",ele.displayName)
             
-        })
+        // })
     }
 
       openDialog() {
         this.dialog.open(mat_dialogueComponent);
+        
       }
 
       logout(){

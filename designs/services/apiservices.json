@@ -292,7 +292,8 @@
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "apiservices"
     },
     {
         "id": "sd_fSRDERp7vogKWum6",
@@ -674,7 +675,9 @@
             "value": "3000"
         },
         "horizontalPosition": "end",
+        "horizontalPositionMap": "",
         "verticalPosition": "bottom",
+        "verticalPositionMap": "",
         "panelClass": {
             "type": "str",
             "value": ""
@@ -685,6 +688,196 @@
         "__n_excludedFromValidation__": {},
         "x": 340,
         "y": 940,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_WQxvLxothCD5I6F1",
+        "type": "Start",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "dashboardpicchart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "dashboardpicchart",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 120,
+        "y": 1080,
+        "wires": [
+            [
+                "sd_U5gDegdfRrgeFP6C"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "apiservices"
+    },
+    {
+        "id": "sd_U5gDegdfRrgeFP6C",
+        "type": "CallSSDApi",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "pie",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "/userincident",
+        "url": "/userincident",
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "pie",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 240,
+        "y": 1080,
+        "wires": [
+            [
+                "sd_nAimGDk9za2T0Qf7"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_nAimGDk9za2T0Qf7",
+        "type": "Script",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"incideclient\",bh)",
+        "functionName": "sd_nAimGDk9za2T0Qf7",
+        "category": "Function",
+        "__n_excludedFromValidation__": {},
+        "x": 400,
+        "y": 1080,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_CBELPYYEHsNRhT31",
+        "type": "Start",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "dashboardprioritychart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "dashboardprioritychart",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 125,
+        "y": 1200,
+        "wires": [
+            [
+                "sd_KNhjdUqM0o2s49bo"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "apiservices"
+    },
+    {
+        "id": "sd_KNhjdUqM0o2s49bo",
+        "type": "CallSSDApi",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "prioritypie",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "/priorityincident",
+        "url": "/priorityincident",
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "prioritypie",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 245,
+        "y": 1200,
+        "wires": [
+            [
+                "sd_hktrfuGj1YU7NbEL"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_hktrfuGj1YU7NbEL",
+        "type": "Script",
+        "z": "sd_PzwN9S3U8mFHJPKb",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"incideclient\",bh)",
+        "functionName": "sd_hktrfuGj1YU7NbEL",
+        "category": "Function",
+        "__n_excludedFromValidation__": {},
+        "x": 405,
+        "y": 1200,
         "wires": [
             []
         ],
